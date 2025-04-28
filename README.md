@@ -1,4 +1,4 @@
-```markdown
+
 # 📑 Slide Summarizer
 
 A simple Streamlit app that transforms PowerPoint decks into concise, human-readable summaries slide by slide. You can choose between OpenAI’s GPT-3.5-Turbo or Google Gemini 2.5 Flash Preview as the summarization engine, and tweak summary style and processing delay to suit your needs.
@@ -39,7 +39,7 @@ A simple Streamlit app that transforms PowerPoint decks into concise, human-read
      openai==0.28.0 \
      google-generativeai \
      python-dotenv
-   ```
+
 
 ---
 
@@ -105,4 +105,3 @@ GEMINI_MODEL=models/gemini-2.5-flash-preview-04-17
 ## 📜 License
 
 This project is released under the **MIT License**. See [LICENSE](LICENSE) for details.  
-```
