@@ -17,6 +17,5 @@
   ],
   "env": {
     "PYTHONPATH": "frontend"
-  },
-  "buildCommand": "cd frontend && chmod +x build.sh && ./build.sh"
+  }
 } 

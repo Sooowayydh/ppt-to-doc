@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Ensure Python is available
-python --version
+# Ensure Python 3.9 is available
+python3.9 --version
 
 # Install pip if not available
-python -m ensurepip --upgrade
+python3.9 -m ensurepip --upgrade
 
 # Upgrade pip
-python -m pip install --upgrade pip
+python3.9 -m pip install --upgrade pip
 
 # Install requirements
-pip install -r requirements.txt
+python3.9 -m pip install -r requirements.txt
 
 # Make the script executable
 chmod +x build.sh 
