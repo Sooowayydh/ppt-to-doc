@@ -5,6 +5,7 @@ services:
     buildCommand: |
       apt-get update && apt-get install -y libreoffice poppler-utils tesseract-ocr
       cd backend && pip install -r requirements.txt
+      export PYTHONPATH=$PYTHONPATH:/opt/render/project/src
     startCommand: cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT
     envVars:
       - key: PORT
