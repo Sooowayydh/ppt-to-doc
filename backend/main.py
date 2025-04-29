@@ -8,7 +8,7 @@ import json
 from typing import List, Dict
 import uvicorn
 
-from pipeline import process_deck
+from .pipeline import process_deck
 
 app = FastAPI(title="Slide Summarizer API")
 
