@@ -10,9 +10,12 @@ from typing import Optional
 
 app = FastAPI(title="Slide Summarizer")
 
+# Get the absolute path to the current directory
+BASE_DIR = Path(__file__).resolve().parent
+
 # Mount static files
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
+app.mount("/static", StaticFiles(directory=str(BASE_DIR / "static")), name="static")
+templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
 
 # Get backend URL from environment variable
 BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
